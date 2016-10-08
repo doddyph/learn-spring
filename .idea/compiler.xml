@@ -21,6 +21,8 @@
     <bytecodeTargetLevel>
       <module name="spring-data-jpa_main" target="1.8" />
       <module name="spring-data-jpa_test" target="1.8" />
+      <module name="spring-data-rest_main" target="1.8" />
+      <module name="spring-data-rest_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

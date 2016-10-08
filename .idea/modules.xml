@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa.iml" group="spring-data-jpa" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_main.iml" group="spring-data-jpa" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_test.iml" group="spring-data-jpa" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest.iml" group="spring-data-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_main.iml" group="spring-data-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_test.iml" group="spring-data-rest" />
     </modules>
   </component>
 </project>

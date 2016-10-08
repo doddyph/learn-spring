@@ -1,3 +1,5 @@
 include 'SpringDataJPA'
 findProject(':SpringDataJPA')?.name = 'spring-data-jpa'
+include 'SpringDataRest'
+findProject(':SpringDataRest')?.name = 'spring-data-rest'
 
