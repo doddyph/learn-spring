@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * Created by dph on 08/10/16.
+ * Links:
+ * https://spring.io/guides/gs/accessing-data-jpa/
+ * https://springframework.guru/configuring-spring-boot-for-postgresql/
  */
 @SpringBootApplication
 public class Application implements CommandLineRunner {

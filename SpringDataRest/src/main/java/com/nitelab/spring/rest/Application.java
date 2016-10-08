@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * Created by dph on 08/10/16.
+ * Link:
+ * https://spring.io/guides/gs/accessing-data-rest/
  */
 @SpringBootApplication
 @EntityScan(basePackages = "com.nitelab.spring.rest.model")
