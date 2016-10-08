@@ -11,6 +11,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/SpringDataJPA" />
             <option value="$PROJECT_DIR$/SpringDataRest" />
+            <option value="$PROJECT_DIR$/SpringJPAManyToMany" />
+            <option value="$PROJECT_DIR$/SpringJPAOneToMany" />
+            <option value="$PROJECT_DIR$/SpringJPAOneToOne" />
           </set>
         </option>
       </GradleProjectSettings>
