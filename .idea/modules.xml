@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/learn-spring.iml" filepath="$PROJECT_DIR$/.idea/modules/learn-spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa.iml" group="spring-data-jpa" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_main.iml" group="spring-data-jpa" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataJPA/spring-data-jpa_test.iml" group="spring-data-jpa" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest.iml" group="spring-data-rest" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_main.iml" group="spring-data-rest" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringDataRest/spring-data-rest_test.iml" group="spring-data-rest" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany.iml" group="spring-jpa-manytomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany_main.iml" group="spring-jpa-manytomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAManyToMany/spring-jpa-manytomany_test.iml" group="spring-jpa-manytomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany.iml" group="spring-jpa-onetomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany_main.iml" group="spring-jpa-onetomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToMany/spring-jpa-onetomany_test.iml" group="spring-jpa-onetomany" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone.iml" group="spring-jpa-onetoone" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone_main.iml" group="spring-jpa-onetoone" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringJPAOneToOne/spring-jpa-onetoone_test.iml" group="spring-jpa-onetoone" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring.iml" filepath="$PROJECT_DIR$/learn-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDataJPA/spring-data-jpa.iml" filepath="$PROJECT_DIR$/SpringDataJPA/spring-data-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDataRest/spring-data-rest.iml" filepath="$PROJECT_DIR$/SpringDataRest/spring-data-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJPAManyToMany/spring-jpa-manytomany.iml" filepath="$PROJECT_DIR$/SpringJPAManyToMany/spring-jpa-manytomany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJPAOneToMany/spring-jpa-onetomany.iml" filepath="$PROJECT_DIR$/SpringJPAOneToMany/spring-jpa-onetomany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJPAOneToOne/spring-jpa-onetoone.iml" filepath="$PROJECT_DIR$/SpringJPAOneToOne/spring-jpa-onetoone.iml" />
     </modules>
   </component>
 </project>

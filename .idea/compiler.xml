@@ -18,17 +18,5 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-data-jpa_main" target="1.8" />
-      <module name="spring-data-jpa_test" target="1.8" />
-      <module name="spring-data-rest_main" target="1.8" />
-      <module name="spring-data-rest_test" target="1.8" />
-      <module name="spring-jpa-manytomany_main" target="1.8" />
-      <module name="spring-jpa-manytomany_test" target="1.8" />
-      <module name="spring-jpa-onetomany_main" target="1.8" />
-      <module name="spring-jpa-onetomany_test" target="1.8" />
-      <module name="spring-jpa-onetoone_main" target="1.8" />
-      <module name="spring-jpa-onetoone_test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

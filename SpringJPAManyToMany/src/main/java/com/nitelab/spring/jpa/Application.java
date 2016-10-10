@@ -1,9 +1,9 @@
 package com.nitelab.spring.jpa;
 
-import com.nitelab.spring.jpa.model.Buku;
-import com.nitelab.spring.jpa.model.Penerbit;
-import com.nitelab.spring.jpa.repository.BukuRepository;
-import com.nitelab.spring.jpa.repository.PenerbitRepository;
+import com.nitelab.spring.jpa.model.Acara;
+import com.nitelab.spring.jpa.model.Karyawan;
+import com.nitelab.spring.jpa.repository.AcaraRepository;
+import com.nitelab.spring.jpa.repository.KaryawanRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +19,7 @@ import java.util.HashSet;
  * Created by dph on 08/10/16.
  * Link:
  * https://hellokoding.com/jpa-many-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/
+ * http://www.javatips.net/blog/hibernate-jpa-many-to-many-relation-mapping-example
  */
 @SpringBootApplication
 @EntityScan(basePackages = "com.nitelab.spring.jpa.model")
@@ -27,11 +28,17 @@ public class Application implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
-    @Autowired
+    /*@Autowired
     private BukuRepository bukuRepository;
 
     @Autowired
-    private PenerbitRepository penerbitRepository;
+    private PenerbitRepository penerbitRepository;*/
+
+    @Autowired
+    private KaryawanRepository karyawanRepository;
+
+    @Autowired
+    private AcaraRepository acaraRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -39,7 +46,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // save a couple of books
+        /*// save a couple of books
         Penerbit publisherA = new Penerbit("Publisher A");
         Penerbit publisherB = new Penerbit("Publisher B");
         Penerbit publisherC = new Penerbit("Publisher C");
@@ -69,6 +76,40 @@ public class Application implements CommandLineRunner {
             add(new Penerbit("Publisher B", new HashSet<Buku>() {{
                 add(bookA);
                 add(bookB);
+            }}));
+        }});*/
+
+        Acara acaraA = new Acara("Acara A");
+        Acara acaraB = new Acara("Acara B");
+        Acara acaraC = new Acara("Acara C");
+
+        karyawanRepository.save(new HashSet<Karyawan>() {{
+            add(new Karyawan("Karyawan A", new HashSet<Acara>() {{
+                add(acaraA);
+                add(acaraB);
+            }}));
+
+            add(new Karyawan("Karyawan B", new HashSet<Acara>() {{
+                add(acaraB);
+                add(acaraC);
+            }}));
+        }});
+
+        Karyawan karyawanA = new Karyawan("Karyawan A");
+        Karyawan karyawanB = new Karyawan("Karyawan B");
+
+        acaraRepository.save(new HashSet<Acara>(){{
+            add(new Acara("Acara A", new HashSet<Karyawan>(){{
+                add(karyawanA);
+            }}));
+
+            add(new Acara("Acara B", new HashSet<Karyawan>(){{
+                add(karyawanA);
+                add(karyawanB);
+            }}));
+
+            add(new Acara("Acara C", new HashSet<Karyawan>(){{
+                add(karyawanB);
             }}));
         }});
     }

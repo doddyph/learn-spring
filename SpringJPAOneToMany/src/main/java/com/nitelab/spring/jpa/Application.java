@@ -1,8 +1,8 @@
 package com.nitelab.spring.jpa;
 
-import com.nitelab.spring.jpa.model.*;
-import com.nitelab.spring.jpa.repository.BookCategoryRepository;
-import com.nitelab.spring.jpa.repository.ClientRepository;
+import com.nitelab.spring.jpa.model.Company;
+import com.nitelab.spring.jpa.model.Employee;
+import com.nitelab.spring.jpa.repository.CompanyRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +20,8 @@ import java.util.Set;
  * Links:
  * http://mrbool.com/rest-server-with-spring-data-spring-boot-and-postgresql/34023
  * https://hellokoding.com/jpa-one-to-many-relationship-mapping-example-with-spring-boot-maven-and-mysql/
+ * http://www.javatips.net/blog/hibernate-jpa-one-to-many-relation-mapping-example
+ * http://www.javatips.net/blog/hibernate-jpa-many-to-one-relation-mapping-example
  */
 @SpringBootApplication
 @EntityScan(basePackages = "com.nitelab.spring.jpa.model")
@@ -31,8 +33,11 @@ public class Application implements CommandLineRunner {
     /*@Autowired
     ClientRepository repository;*/
 
+    /*@Autowired
+    private BookCategoryRepository repository;*/
+
     @Autowired
-    private BookCategoryRepository repository;
+    private CompanyRepository repository;
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
@@ -40,10 +45,10 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*Client clientA = new Client("John", "13th Avenue, 1234", "1275634");
+       /* Client clientA = new Client("John", "13th Avenue, 1234", "1275634");
         repository.save(clientA);*/
 
-        // save a couple of categories
+        /*// save a couple of categories
         BookCategory categoryA = new BookCategory("Category A");
         Set bookAs = new HashSet<Book>(){{
             add(new Book("Book A1", categoryA));
@@ -63,6 +68,25 @@ public class Application implements CommandLineRunner {
         repository.save(new HashSet<BookCategory>() {{
             add(categoryA);
             add(categoryB);
+        }});*/
+
+        Company SRIN = new Company(
+                "SRIN",
+                "Jendral Sudirman St.",
+                "South Jakarta",
+                "DKI Jakarta",
+                "Indonesia");
+
+        Set employees = new HashSet<Employee>() {{
+            add(new Employee("Doddy"));
+            add(new Employee("Leo"));
+            add(new Employee("Indra"));
+        }};
+
+        SRIN.setEmployees(employees);
+
+        repository.save(new HashSet<Company>() {{
+            add(SRIN);
         }});
     }
 }
